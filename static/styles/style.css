@@ -1,19 +1,23 @@
-span {
+body {
+    margin: 0;
+    padding: 0;
+}
+
+| span {
     font-style: italic;
 }
+
 .black {
     font-weight: bold;
 }
+
 .conteiner {
+
     text-align: center;
-    background-color: rgb(214, 24, 24);
+    background-color: rgb(223, 10, 10);
 }
-.Gerb>img {
-    width: 300px;
-}
-.Gerb {
-    display: inline-block;
-}
+
+
 .sostav {
     background-color: rgb(246, 32, 32);
     display: inline-block;
@@ -21,13 +25,57 @@ span {
     border-width: 0.5px;
     padding-right: 4px;
 }
-.test {
-    background-color: rgb(2, 10, 15);
-    display: inline-block;
-}
-.test-2 {
-    display: inline-block;
-}
+
 .sostav>p {
     text-align: center;
+}
+
+.img-text>img {
+    width: 250px;
+    float: right;
+    border-style: solid;
+}
+
+/*верхняя навигационная панель*/
+
+.panel {
+    background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel>nav>ul {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+
+}
+
+.panel>nav>ul>li>a {
+    display: block;
+    padding: 10px;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+@media (max-width: 900px){
+    .panel {
+        flex-direction: column;
+    }
+}
+
+/*Панель справа и панель слева*/
+
+.panel-osnova {
+    display: flex;
+}
+
+.panel-l {
+    width: 14%;
+}
+
+.panel-p {
+    width: 82%;
 }

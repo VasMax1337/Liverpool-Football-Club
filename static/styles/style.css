@@ -12,14 +12,14 @@ body {
 }
 
 .conteiner {
-
-    text-align: center;
+padding-left: 15px;
+text-align: center;
     background-color: rgb(223, 10, 10);
 }
 
 
 .sostav {
-    background-color: rgb(246, 32, 32);
+    background-color: rgb(234, 8, 8);
     display: inline-block;
     border-style: solid;
     border-width: 0.5px;
@@ -70,12 +70,29 @@ body {
 
 .panel-osnova {
     display: flex;
+    justify-content: center;
 }
 
 .panel-l {
     width: 14%;
+    background-color: aqua;
 }
 
 .panel-p {
     width: 82%;
+}
+
+.panel-l>ol {
+    list-style: none;
+    border-style: solid;
+    border-width: 0.5px;
+    margin: 10px;
+    padding: 0;
+    padding-bottom: 10px;
+}
+.panel-l>div {
+    width: 100%;
+}
+.panel-l>div>img {
+    width: 100%;
 }
